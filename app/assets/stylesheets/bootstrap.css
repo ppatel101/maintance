@@ -8981,10 +8981,10 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 2%;
 }
 .table-backcolor-red{
-  background-color: #F27257;
+  background-color: #F27257 !important;
 }
 .table-backcolor-darkred{
-  background-color: #ED5C3E;
+  background-color: #ED5C3E !important;
 }
 .table-header{
   line-height: 18px;
