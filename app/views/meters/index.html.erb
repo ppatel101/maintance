@@ -1,0 +1,34 @@
+<h1>Meter Reading </h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Flat No</th>
+    <th>New Unit</th>
+    <th>Old Unit</th>
+    <th>Used Unit</th>
+    <th>Rate Per Unit</th>
+    <th>Amount</th>
+    <th>Fix Charge</th>
+    <th>Total</th>
+  </tr>
+<% @meters.each do |meter| %>
+  <tr>
+    <td><%= meter.flat_no %></td>
+    <td><%= meter.new_unit %></td>
+    <td><%= meter.old_unit %></td>
+    <td><%= meter.used_unit %></td>
+    <td><%= meter.rate_perunit %></td>
+    <td><%= meter.amount %></td>
+    <td><%= meter.fix_charge %></td>
+    <td><%= meter.total %></td>   
+  </tr>
+<% end %>
+</table>
+
+<h2>Import Reading</h2>
+
+<%= form_tag import_meters_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
+<p><%= link_to "Printable Receipt (PDF)", meters_path(@meters, format: "pdf"), target: '_blank' %></p>

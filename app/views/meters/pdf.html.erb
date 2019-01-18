@@ -1,0 +1,52 @@
+<%= wicked_pdf_stylesheet_link_tag "bootstrap.css" %>
+<% @meters.each do |meter| %>
+  <div class="column">
+    <table class="table table-striped" border="2">
+      <tr>
+        <th colspan="2" class="table-backcolor-lightred">The Suramya  Residency <br> co.op.ho.service society limited</th>
+      </tr>
+      <tr>
+        <th colspan="2" >date: 20-6-2017</th>
+      </tr>
+      <tr>
+        <th colspan="2" >Address: 'Suramya Residency',Behind Suvas Residency, Nikol Gam Road,Nikol,Ahmedabad-382350</th>
+      </tr>
+      <tr class="table-backcolor-darkred">
+        <th>Detail</th>
+        <th>Rs.</th>
+      </tr>
+      <tr class="text-align-center">
+        <td>Flat Number</td>
+        <td><%= meter.flat_no %></td>
+      </tr>
+      <tr class="text-align-center">
+        <td>New Unit</td>
+        <td><%= meter.new_unit %></td>
+      </tr>
+      <tr class="text-align-center">
+        <td>Old Unit</td>
+        <td><%= meter.old_unit %></td>
+      </tr>
+      <tr class="text-align-center">
+        <td>Used Unit</td>
+        <td><%= meter.used_unit %></td>
+      </tr>
+      <tr class="text-align-center">
+        <td>Rate Per Unit</td>
+        <td><%= meter.rate_perunit %></td>
+      </tr>
+      <tr class="text-align-center">
+        <td>Amount</td>
+        <td><%= meter.amount %></td>
+      </tr>
+      <tr class="text-align-center">
+        <td>Fix Charge</td>
+        <td><%= meter.fix_charge %></td>
+      </tr>
+      <tr class="text-align-center table-backcolor-red">
+        <td>Total</td>
+        <td><%= meter.total %></td>
+      </tr>
+    </table>
+  </div>
+<% end %>

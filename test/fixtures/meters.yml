@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flat_no: MyString
+  new_unit: MyString
+  old_unit: MyString
+  used_unit: MyString
+  rate_perunit: MyString
+  amount: MyString
+  fix_charge: MyString
+  total: MyString
+
+two:
+  flat_no: MyString
+  new_unit: MyString
+  old_unit: MyString
+  used_unit: MyString
+  rate_perunit: MyString
+  amount: MyString
+  fix_charge: MyString
+  total: MyString
