@@ -8980,9 +8980,6 @@ a.text-dark:hover, a.text-dark:focus {
   height: 50%;
   margin-right: 2%;
 }
-.text-align-center{
-  text-align: center;
-}
 .table-backcolor-red{
   background-color: #F27257;
 }
@@ -8996,9 +8993,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .table-data{
   line-height: 10px;
+  text-align: center;
 }
 .table-date{
-  line-height: 12px;
+  line-height: 16px;
 }
 .table-address{
   line-height: 18px;
