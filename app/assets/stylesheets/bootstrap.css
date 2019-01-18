@@ -8986,9 +8986,20 @@ a.text-dark:hover, a.text-dark:focus {
 .table-backcolor-red{
   background-color: #F27257;
 }
-.table-backcolor-lightred{
-  background-color: #E79D8E;
-}
 .table-backcolor-darkred{
   background-color: #ED5C3E;
+}
+.table-header{
+  line-height: 18px;
+  background-color: #E79D8E !important;
+  font-size: 13pt !important;
+}
+.table-data{
+  line-height: 10px;
+}
+.table-date{
+  line-height: 8px;
+}
+.table-address{
+  line-height: 18px;
 }
