@@ -1,54 +1,55 @@
+<meta charset="UTF-8">
 <%= wicked_pdf_stylesheet_link_tag "bootstrap.css" %>
 <% @meters.each do |meter| %>
-  <div class="column">
-    <table class="table table-striped" border="2">
+  <div class="column" lang="gu">
+    <table class="table table-striped" border="2" >
       <tr class="table-header">
-        <th colspan="2">The Suramya  Residency <br> co.op.ho.service society limited</th>
+        <th colspan="3" lang="gu">ધી સુરમ્ય રેસીડેન્સી <br>કો. ઓ. હા. સર્વિસ સોસાયટી લી.</th>
       </tr>
       <tr class="table-date">
-        <th colspan="2">Nathan/A.H.M/Sa.(Ho)10067,<br> Date: 20-6-2017</th>
+        <th colspan="3">નધણ/એ.એચ.એમ./સા. (હા)૧૦૦૬૭, તા.૨૦-૦૬-૨૦૧૭</th>
       </tr>
       <tr class="table-address">
-        <th colspan="2">'Suramya Residency',Behind Suvas Residency, Nikol Gam Road,Nikol,Ahmedabad-382350</th>
+        <th colspan="3">'સુરમ્ય રેસીડેન્સી',સુવાસ રેસીડેન્સીની પાછળ, નિકોલ ગામ રોડ, નિકોલ, અમદાવાદ-૩૮૨૩૫૦.</th>
       </tr>
       <tr>
-        <th style="text-align:left;">Name: <%= meter.name %></th>
-        <th style="text-align:left">R. No : <%= meter.receipt_no %></th>
+      <th style="text-align:left;width:33%;">પહોંચ નં. : <%= meter.receipt_no %></th>
+      <th style="text-align:left;width:33%;">ફ્લેટ નં. : <%= meter.flat_no %></th>
+      <th style="text-align:left;width:34%;">તા.<%= meter.date %></th>
+      </tr>
+      <tr>
+        <th colspan="3" style="text-align:left;">નામ :<%= meter.name %></th>
       </tr>
       <tr class="table-data table-backcolor-darkred">
-        <th>Detail</th>
-        <th>Rs.</th>
+        <th colspan="2">વિગત</th>
+        <th>રકમ રૂ.</th>
       </tr>
       <tr class="table-data">
-        <td>Flat Number</td>
-        <td><%= meter.flat_no %></td>
-      </tr>
-      <tr class="table-data">
-        <td>New Unit</td>
+        <td colspan="2">હાલ નું વાંચન</td>
         <td><%= meter.new_unit %></td>
       </tr>
       <tr class="table-data">
-        <td>Old Unit</td>
+        <td colspan="2">અગાઉ નું વાંચન</td>
         <td><%= meter.old_unit %></td>
       </tr>
       <tr class="table-data">
-        <td>Used Unit</td>
+        <td colspan="2">વપરાયેલ યુનિટ</td>
         <td><%= meter.used_unit %></td>
       </tr>
       <tr class="table-data">
-        <td>Rate Per Unit</td>
+        <td colspan="2">યુનિટ નો ભાવ</td>
         <td><%= meter.rate_perunit %></td>
       </tr>
       <tr class="table-data">
-        <td>Amount</td>
+        <td colspan="2">પાણીનું બિલ</td>
         <td><%= meter.amount %></td>
       </tr>
       <tr class="table-data">
-        <td>Fix Charge</td>
+        <td colspan="2">મેન્ટેનેન્સ ચાર્જ</td>
         <td><%= meter.fix_charge %></td>
       </tr>
       <tr class="table-data table-backcolor-red">
-        <td>Total</td>
+        <td colspan="2">ટોટલ</td>
         <td><%= meter.total %></td>
       </tr>
     </table>
