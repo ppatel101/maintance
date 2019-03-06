@@ -1,7 +1,9 @@
 <meta charset="UTF-8">
 <%= wicked_pdf_stylesheet_link_tag "bootstrap.css" %>
+<% flag = 1 %>
 <% @meters.each do |meter| %>
-  <div class="column" lang="gu">
+  <% flag = flag + 1%>
+  <div class="column <%= flag.even? ? 'even' : ''%>" lang="gu">
     <table class="table table-striped" border="2" >
       <tr class="table-header">
         <th colspan="3" lang="gu">ધી સુરમ્ય રેસીડેન્સી <br>કો. ઓ. હા. સર્વિસ સોસાયટી લી.</th>

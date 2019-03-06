@@ -8976,9 +8976,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .column {
   float: left;
-  width: 48%;
+  width: 45%;
   height: 50%;
-  margin-right: 2%;
+  
+}
+.even{
+  margin-right: 7% ;
 }
 .table-backcolor-red{
   /* background-color: #F27257 !important; */
